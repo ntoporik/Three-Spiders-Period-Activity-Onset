@@ -19,7 +19,7 @@ These files contain data of locomotor activity meters of 32 monitors (S1-S32) fo
 
 #### Latrodectus.zip
 1. Code
-  <ol>a. Clean_up.ipynb: cleans up the original .txt file</ol>
+  <br>a. Clean_up.ipynb: cleans up the original .txt file</br>
   b. Make_Images.ipynb: make images of raster plots and ACF plots for each live spiders in LD and DD separately
   c. Activity.ipynb: finds FRP and onset of activity, plot periodogram and acf, and plot scatter plot of FRP vs onset
 2. Data
