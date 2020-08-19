@@ -20,20 +20,20 @@ These files contain data of locomotor activity meters of 32 monitors (S1-S32) fo
 #### Latrodectus.zip
 1. Code
   <br>a. Clean_up.ipynb: cleans up the original .txt file</br>
-  b. Make_Images.ipynb: make images of raster plots and ACF plots for each live spiders in LD and DD separately
-  c. Activity.ipynb: finds FRP and onset of activity, plot periodogram and acf, and plot scatter plot of FRP vs onset
+  <br>b. Make_Images.ipynb: make images of raster plots and ACF plots for each live spiders in LD and DD separately
+  <br>c. Activity.ipynb: finds FRP and onset of activity, plot periodogram and acf, and plot scatter plot of FRP vs onset
 2. Data
-  a. Latrodectus.txt: orginal data file
-  b. Alive.csv: data of dead and live spiders
-  c. LD.csv: the activity data in LD period
-  d. DD.csv: the activity data in DD period
+  <br>a. Latrodectus.txt: orginal data file
+  <br>b. Alive.csv: data of dead and live spiders
+  <br>c. LD.csv: the activity data in LD period
+  <br>d. DD.csv: the activity data in DD period
 3. Figures
-  a. Full_Raster_Plots: raster plots for each spider in LD and DD together
-  b. LD_Rasters_with_ACF: raster and ACF plots for each live spider in LD period--raster on the left and ACF on the right
-  c. DD_Rasters_with_ACF: raster and ACF plots for each live spider in DD period--raster on the left and ACF on the right
-  d. Onset: Raster plots with onset of activity indicated by red star
-  e. pgram: periodograms and acf of each spider
-  f. FRP vs. Onset.png: scatter plot of FRP vs onset
+  <br>a. Full_Raster_Plots: raster plots for each spider in LD and DD together
+  <br>b. LD_Rasters_with_ACF: raster and ACF plots for each live spider in LD period--raster on the left and ACF on the right
+  <br>c. DD_Rasters_with_ACF: raster and ACF plots for each live spider in DD period--raster on the left and ACF on the right
+  <br>d. Onset: Raster plots with onset of activity indicated by red star
+  <br>e. pgram: periodograms and acf of each spider
+  <br>f. FRP vs. Onset.png: scatter plot of FRP vs onset
 
 ## Instructions on How to Use Files 
 1. In the original .txt file, the last 32 columns are sure to be the activity of the 32 spiders. However, there are some useless columns exists before the last 32 columns. Visually inpect or plot some columns to find the columns represents the 'lights' and add column names to the list named 'colum' accordingly. Then, delete the useless columns (e.g. 'Number'). In Latrodectus.txt, only the column 'Number' is useless but in Parasteatoda.txt and Studiosus.txt, there are six more useless columns that contains only 0 or 1.
