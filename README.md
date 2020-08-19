@@ -36,7 +36,7 @@ These files contain data of locomotor activity meters of 32 monitors (S1-S32) fo
   <br>f. FRP vs. Onset.png: scatter plot of FRP vs onset
 
 ## Instructions on How to Use Files 
-1. Use **Clean_Up.ipynb**. In the original .txt file, the last 32 columns are sure to be the activity of the 32 spiders. However, there are some useless columns exists before the last 32 columns. Visually inpect or plot some columns to find the columns represents the 'lights' and add column names to the list named 'colum' accordingly. Then, delete the useless columns (e.g. 'Number'). In **Latrodectus.txt**, only the column 'Number' is useless but in **Parasteatoda.txt** and **Studiosus.txt**, there are six more useless columns that contains only 0 or 1.
+1. Run **Clean_Up.ipynb**. In the original .txt file, the last 32 columns are sure to be the activity of the 32 spiders. However, there are some useless columns exists before the last 32 columns. Visually inpect or plot some columns to find the columns represents the 'lights' and add column names to the list named 'colum' accordingly. Then, delete the useless columns (e.g. 'Number'). In **Latrodectus.txt**, only the column 'Number' is useless but in **Parasteatoda.txt** and **Studiosus.txt**, there are six more useless columns that contains only 0 or 1.
 2. When plotting the raster plots, since there are some slightly differences with the number of days of different species, adjust the 'figsize' parameter to avoid overlapping.
 3. Visually inspect the raster plots and decide whether the spider is alive or not. Save in the **Alive.csv** file (0 for Dead and 1 for Alive).
    <br> Dead (0): if no activity for 4 or more consecutive days
