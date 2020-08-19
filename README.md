@@ -36,10 +36,13 @@ These files contain data of locomotor activity meters of 32 monitors (S1-S32) fo
   <br>f. FRP vs. Onset.png: scatter plot of FRP vs onset
 
 ## Instructions on How to Use Files 
-1. In the original .txt file, the last 32 columns are sure to be the activity of the 32 spiders. However, there are some useless columns exists before the last 32 columns. Visually inpect or plot some columns to find the columns represents the 'lights' and add column names to the list named 'colum' accordingly. Then, delete the useless columns (e.g. 'Number'). In Latrodectus.txt, only the column 'Number' is useless but in Parasteatoda.txt and Studiosus.txt, there are six more useless columns that contains only 0 or 1.
+1. Use **Clean_Up.ipynb**. In the original .txt file, the last 32 columns are sure to be the activity of the 32 spiders. However, there are some useless columns exists before the last 32 columns. Visually inpect or plot some columns to find the columns represents the 'lights' and add column names to the list named 'colum' accordingly. Then, delete the useless columns (e.g. 'Number'). In **Latrodectus.txt**, only the column 'Number' is useless but in **Parasteatoda.txt** and **Studiosus.txt**, there are six more useless columns that contains only 0 or 1.
 2. When plotting the raster plots, since there are some slightly differences with the number of days of different species, adjust the 'figsize' parameter to avoid overlapping.
-3. Visually inspect the raster plots and decide whether the spider is alive or not. Save in the Alive.csv file (0 for Dead and 1 for Alive).
-4. LD.csv represents the fully cleaned data during LD period and DD.csv represents the fully cleaned data during DD period.
-5. In Make_Images.ipynb, the rolling window can be adjusted according to different species (e.g. since Latrodectus spiders move less frequently, the rolling widow is set to be '2.5 H' and Parasteatoda spiders move more frequently so the rolling widow is set to be '1 H').
+3. Visually inspect the raster plots and decide whether the spider is alive or not. Save in the **Alive.csv** file (0 for Dead and 1 for Alive).
+   <br> Dead (0): if no activity for 4 or more consecutive days
+   <br> Alive (1): not dead 
+4. **LD.csv** represents the fully cleaned data during LD period and **DD.csv** represents the fully cleaned data during DD period.
+5. In **Make_Images.ipynb**, the rolling window can be adjusted according to different species (e.g. since Latrodectus spiders move less frequently, the rolling widow is set to be '2.5 H' and Parasteatoda spiders move more frequently so the rolling widow is set to be '1 H').
 6. When making the raster and ACF plots, since the number of days in LD and DD period is different, LD and DD period have to be run separately and adjust the 'figsize' parameter to make the rasters better fit in the figure and avoid overlapping.
 7. Visually inspect the raster and ACF plots and see if the spider is rhymic during LD and DD period. Save the data in 'Rhythm.csv' file (1 for rhymic and 0 for non-rhymic).
+8. Run **Activity.ipynb**, the first cell/figure returns FRP/Onset plot using visual inspection of acf. The second cell/figure returns FRP/Onset plot using periodogram of period detection. Visual inspection of periodogram and autocorrelation for each spider is also generated for later visual inspections. 
